@@ -1,0 +1,123 @@
+@import url('https://unpkg.com/aos@2.3.4/dist/aos.css]');
+
+
+/* landing.css - small utility styles for LandingPage */
+.landing-hero {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(2,18,50,0.95) 0%, rgba(7,18,51,0.95) 60%), url('/hero-bg.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 48px 0;
+}
+
+.brand-logo { font-weight:600; letter-spacing:0.3px; display:flex; align-items:center; gap:.6rem; }
+.brand-logo .fa-envelope { font-size:1.5rem; transform: rotate(-7deg); color:#fff; }
+
+.hero-title { font-size: clamp(2rem, 4.8vw, 3.8rem); font-weight:800; line-height:1.02; }
+.hero-sub { color: var(--muted); font-weight:400; margin-top: .5rem; }
+
+.cta-btn { border-radius: 8px; padding: 10px 28px; font-weight:600; }
+.cta-outline { background: transparent; border: 1.6px solid rgba(255,255,255,0.9); color: #fff; }
+
+.upload-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 0px 6px  rgba(6,22,40,0.35);
+}
+
+.drop-area {
+  height: 140px;
+  border-radius: 8px;
+  background: #f5f7fa;
+  border: 1px dashed #e2e8f0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  color:#7b8794;
+  font-weight:500;
+}
+
+.sample-preview {
+  background: var(--card-bg);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 22px rgba(6,22,40,0.18);
+}
+
+.ai-box {
+  background: var(--card-bg);
+  padding: 18px;
+  min-height: 120px;
+  border-radius: 12px;
+  /* box-shadow: 0 8px 30px rgba(6,22,40,0.18); */
+  box-shadow: 0 0px 6px  rgba(6,22,40,0.35);
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-note { color: var(--muted); font-size: .95rem; }
+
+
+.upload-panel, .ai-panel {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.ai-box {
+  min-height: 100px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.mb-6 {
+  margin-bottom: 7rem;
+}
+
+/* AOS  css */
+
+ /* General card stling improvements */
+
+ .upload-card, .sample-preview, .ai-box {
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+ }
+
+ /* Subtle hover lift */
+
+ .upload-card:hover,
+ .sample-preview:hover,
+ .ai-box:hover{
+  transform: translateY(-5px);
+  box-shadow: 012px 25px rgba(0, 0, 0, 0.12);
+ }
+
+ /* Zig-zag spacing tweaks */
+ .row.justify-content-start,
+ .row.justify-content-end {
+  margin-top: 3rem;
+ }
+
+ /* Smooth fade when entering viewport(AOS hadles animation, this refines it) */
+
+ [data-aos] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition-property: opacity, transform;
+ }
+
+ [data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+ }

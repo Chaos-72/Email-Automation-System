@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+pydantic
+python-dotenv
+langchain
+openai
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
+sendgrid
+apscheduler
+python-multipart
+pandas

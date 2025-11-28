@@ -1,0 +1,67 @@
+# ---------------------------------------------------------
+# PYTHON / BACKEND
+# ---------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Environment files
+.env
+.env.* 
+*.env
+example.env  # allow this if you want to commit it; remove if not
+
+# Credentials / Tokens / Secrets
+client_secret.json
+credentials.json
+token.json
+token_*.json
+google_credentials.json
+service_account.json
+
+# Databases
+*.db
+*.sqlite3
+app.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# ---------------------------------------------------------
+# NODE / FRONTEND
+# ---------------------------------------------------------
+
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+
+# Frontend environment files
+frontend/.env
+frontend/.env.*
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------
+# OTHER (Security)
+# ---------------------------------------------------------
+old creds/
+*creds*
+*secret*
+*token*
+*.key
+*.pem
+*.crt
