@@ -13,9 +13,7 @@ venv/
 
 # Environment files
 .env
-.env.* 
-*.env
-example.env  # allow this if you want to commit it; remove if not
+.env.*   # allow this if you want to commit it; remove if not
 
 # Credentials / Tokens / Secrets
 client_secret.json
